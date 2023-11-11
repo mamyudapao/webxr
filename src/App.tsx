@@ -1,4 +1,4 @@
-import {ARButton, XR, Controllers, Hands} from '@react-three/xr'
+import {ARButton, XR, Controllers, Hands, VRButton} from '@react-three/xr'
 import {Canvas} from '@react-three/fiber'
 import PenguinModel from './Components/UseModel/index';
 import {Physics} from "@react-three/cannon";
@@ -6,9 +6,9 @@ import {Physics} from "@react-three/cannon";
 function App() {
     return (
         <>
-            <Physics>
-            <ARButton></ARButton>
-                <Canvas>
+            <VRButton></VRButton>
+            <Canvas>
+                <Physics>
                     <XR>
                         <Controllers/>
                         <Hands/>
@@ -16,8 +16,8 @@ function App() {
                         <pointLight position={[0, 1.6, 0]}/>
                         <PenguinModel/>
                     </XR>
-                </Canvas>
-            </Physics>
+                </Physics>
+            </Canvas>
         </>
     )
 }
