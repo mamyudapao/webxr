@@ -1,11 +1,11 @@
-import {VRButton, XR, Controllers, Hands} from '@react-three/xr'
+import {ARButton, XR, Controllers, Hands} from '@react-three/xr'
 import {Canvas} from '@react-three/fiber'
 import PenguinModel from './Components/UseModel/index';
 
 function App() {
     return (
         <>
-            <VRButton></VRButton>
+            <ARButton></ARButton>
             <Canvas>
                 <XR>
                     <Controllers/>
