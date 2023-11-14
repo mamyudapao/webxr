@@ -4,6 +4,7 @@ import { useGLTF } from "@react-three/drei";
 import { useBox } from "@react-three/cannon";
 import { Object3D } from "three";
 
+
 const PenguinModel = () => {
     const modelRef = useRef<Object3D>();
     const { scene } = useGLTF("/penguin.gltf");
@@ -24,7 +25,7 @@ const PenguinModel = () => {
     });
 
     return (
-        <primitive ref={modelRef} object={scene} scale={1} />
+        <primitive ref={modelRef} object={scene} scale={1}  />
     );
 }
 
